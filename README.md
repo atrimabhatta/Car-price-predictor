@@ -1,7 +1,8 @@
 ﻿# Car-price-predictor
 **CAR-PRICE-Predictor-with-ML by Atrima Bhattacharyya**
 
-![image](https://github.com/atrimabhatta/CAR-PRICE-Predictor-with-ML/assets/159685040/820be6ea-a875-4c52-ac83-ebbd14be06d6)
-![image](https://github.com/atrimabhatta/CAR-PRICE-Predictor-with-ML/assets/159685040/9b9a6c41-7278-4e84-b887-7087e3e8676f)
-![image](https://github.com/atrimabhatta/CAR-PRICE-Predictor-with-ML/assets/159685040/cff3414e-1854-438a-86a2-de0a33a30085)
+![image](https://github.com/atrimabhatta/Car-price-predictor/assets/159685040/2ec8cf8f-2861-44e5-b76d-70d73aef2845)
+![image](https://github.com/atrimabhatta/Car-price-predictor/assets/159685040/b9b39769-9b6c-431c-8943-82c8f794f520)
+![image](https://github.com/atrimabhatta/Car-price-predictor/assets/159685040/46721131-254d-4488-9320-d21fe4803fde)
+
 
