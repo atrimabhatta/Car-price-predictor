@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Predictor</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            background-color: aquamarine;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        form {
+            background-color: #02074e;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+            color:white ;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="number"], input[type="submit"] {
+            width: calc(80% - 22px);
+            padding: 10px;
+            margin-left: 40px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+
+        }
+
+        input[type="submit"] {
+            background-color: #ff4ee7;
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 60px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a0456b;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    
+    <form action="/predict" method="post">
+        <h1> Predict the Car Price</h1>
+        <label for="name">Car Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="company">Company of the Car:</label>
+        <input type="text" id="company" name="company" required><br><br>
+        <label for="year">Year of Purchase:</label>
+        <input type="number" id="year" name="year" required><br><br>
+        <label for="kms_driven">Kilo Meter Driven:</label>
+        <input type="number" id="kms_driven" name="kms_driven" required><br><br>
+        <label for="fuel_type">Type of Fuel :</label>
+        <input type="text" id="fuel_type" name="fuel_type" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+    {% endif %}
+</body>
+</html>
